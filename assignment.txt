@@ -25,6 +25,7 @@ maybe CE (clear entry) button
 display area for current entry (digits or operator) / current value (after operator has been entered?)
 e.g. 2 + 3 + would display 5 + ? 
 or should it just show the chain of all entries 2 + 3 + ? 
+answer (like example): double display -> tally for all entries running at bottom, latest integer entry in large display at top.
 
 /*-- DESIGN THOUGHTS --*/
 
@@ -32,4 +33,8 @@ rounded corners for main body
 rounded corners on button
 different contrast colors for operator keys, equal key and clear key(s)
 Maybe colors other than gray for body
+
+Font: Electrolize
+<link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
+font-family: 'Electrolize', sans-serif;
 
