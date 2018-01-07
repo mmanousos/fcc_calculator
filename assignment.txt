@@ -10,3 +10,26 @@ User Story: I can add, subtract, multiply and divide two numbers.
 User Story: I can clear the input field with a clear button.
 
 User Story: I can keep chaining mathematical operations together until I hit the equal button, and the calculator will tell me the correct output.
+
+
+/*-- PSEUDOCODE --*/
+
+required:
+need a clear button
+need buttons for all numbers 0-9
+need equal button
+need operator buttons + - / * 
+
+nice to have:
+maybe CE (clear entry) button
+display area for current entry (digits or operator) / current value (after operator has been entered?)
+e.g. 2 + 3 + would display 5 + ? 
+or should it just show the chain of all entries 2 + 3 + ? 
+
+/*-- DESIGN THOUGHTS --*/
+
+rounded corners for main body
+rounded corners on button
+different contrast colors for operator keys, equal key and clear key(s)
+Maybe colors other than gray for body
+
