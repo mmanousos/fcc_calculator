@@ -38,3 +38,16 @@ Font: Electrolize
 <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
 font-family: 'Electrolize', sans-serif;
 
+/*-- SCRIPTING --*/
+
+If a button with the number or operator class is clicked, the value of that button's text should be displayed in the 'display-under' field.
+
+If a button with the number class is clicked, that button's value should be held in a variable. 
+
+If a button with the number or operator class is clicked, that operation should track to a variable & the current total displayed in the 'display-main' field.
+
+If the '=' button is clicked, the current total of the return variable should be displayed in the 'display-main' field. 
+
+If the 'AC' button is clicked, the variable holding the calculating return value should be reset. 
+
+If the 'C' button is clicked, only the last operation should be reversed from the return variable value. 
