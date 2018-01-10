@@ -1,8 +1,7 @@
 html {
     background-color: #FFECE5;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Space Mono', 'Roboto Mono', 'Electrolize', monospace, sans-serif;
     font-size: 25px;
-/*   font-family: 'Electrolize', sans-serif; */
 }
 
 a:hover,
@@ -14,6 +13,7 @@ body {
     background-color: #FFECE5;
     margin-top: 20px;
 }
+
 
 .calculator {
     background-color: #66FAFF; 
@@ -30,11 +30,13 @@ body {
 #display-main {
     border-bottom-right-radius: 0px; 
     border-bottom-left-radius: 0px;
-    padding-bottom: 0px;
 }
 
 #display-under {
-    height: 35px;
+    height: 50px;
+    font-size: 60%;
+    line-height: 50px;
+    vertical-align: middle;
     border-top-right-radius: 0px; 
     border-top-left-radius: 0px;
 }
