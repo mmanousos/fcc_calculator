@@ -10,67 +10,79 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         
         
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Space+Mono|Electrolize" rel="stylesheet">
-       <!-- <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> -->
-<!--        <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet"> -->
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono|Space+Mono|Electrolize" rel="stylesheet">
+     
         
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
 
     <body>
         <div class="center-block jumbo container-fluid">
-            <div class="calculator row offset-sm-4 col-sm-4 main">
-                <div class="display col-sm-12" id="display-main">
-                    <div class="text"></div></div>
-                <div class="display col-sm-12" id="display-under"></div>
-                <div class="col col-sm-3">
-                    <div class="button number"><div class="text button-text">1</div></div></div>
-                <div class="col col-sm-3">
-                    <div class="button number"><div class="text button-text">2</div></div></div>
-                <div class="col col-sm-3">
-                    <div class="button number"><div class="text button-text">3</div></div></div>
-                <div class="col col-sm-3">
-                    <div class="button operator calc"><div class="text button-operator">*</div></div></div>
-                
-                <div class="col col-sm-3">
-                    <div class="button number"><div class="text button-text">4</div></div></div>
-                <div class="col col-sm-3">
-                    <div class="button number"><div class="text button-text">5</div></div></div>
-                <div class="col col-sm-3">
-                    <div class="button number"><div class="text button-text">6</div></div></div>
-                <div class="col col-sm-3">
-                    <div class="button operator calc"><div class="text button-operator">/</div></div></div>
-            
-                <div class="col col-sm-3">
-                    <div class="button number"><div class="text button-text">7</div></div></div>
-                <div class="col col-sm-3">
-                    <div class="button number"><div class="text button-text">8</div></div></div>
-                <div class="col col-sm-3">
-                    <div class="button number"><div class="text button-text">9</div></div></div>
-                <div class="col col-sm-3">
-                    <div class="button operator calc"><div class="text button-operator">-</div></div></div>
-               
-                
-                <div class="col col-sm-3">
-                    <div class="clear button" id="clear-all"><div class="text clear-button">AC</div></div></div>                
-                <div class="col col-sm-3">
-                    <div class="button number"><div class="text button-text">0</div></div></div>
-                <div class="col col-sm-3">
-                    <div class="button number"><div class="text button-text">.</div></div></div>
-                <div class="col col-sm-3">
-                    <div class="button operator calc"><div class="text button-operator">+</div></div></div>
-    
-                <div class="col col-sm-12">
-                    <div class="long operator" id="enter"><div class="text enter">=</div></div></div>
+            <div class="calculator col-xs-12 offset-lg-4 col-lg-4">
+                <div class="row">
+                    <div class="display col-sm-11" id="display-main">
+                        <div class="text">0</div></div>
+                    <div class="display col-sm-11" id="display-under"></div>
+                </div>
 
-            </div> 
-            
-            <div class="credit"> design and code: <a href="http://www.melissamanousos.com" target="_blank">M. Manousos</a> - a <a href="http://www.freecodecamp.org" target="_blank">freeCodeCamp</a> assignment </div>
+                <div class="row">    
+                    <div class="col col-xs-3">
+                        <div class="button number"><div class="text button-text">1</div></div></div>
+                    <div class="col col-xs-3">
+                        <div class="button number"><div class="text button-text">2</div></div></div>
+                    <div class="col col-xs-3">
+                        <div class="button number"><div class="text button-text">3</div></div></div>
+                    <div class="col col-xs-3">
+                        <div class="button operator calc"><div class="text button-operator">*</div></div></div>
+                </div>
+
+                <div class="row">      
+                    <div class="col col-xs-3">
+                        <div class="button number"><div class="text button-text">4</div></div></div>
+                    <div class="col col-xs-3">
+                        <div class="button number"><div class="text button-text">5</div></div></div>
+                    <div class="col col-xs-3">
+                        <div class="button number"><div class="text button-text">6</div></div></div>
+                    <div class="col col-xs-3">
+                        <div class="button operator calc"><div class="text button-operator">/</div></div></div>
+                </div>
+                    
+                <div class="row">
+                    <div class="col col-xs-3">
+                        <div class="button number"><div class="text button-text">7</div></div></div>
+                    <div class="col col-xs-3">
+                        <div class="button number"><div class="text button-text">8</div></div></div>
+                    <div class="col col-xs-3">
+                        <div class="button number"><div class="text button-text">9</div></div></div>
+                    <div class="col col-xs-3">
+                        <div class="button operator calc"><div class="text button-operator">-</div></div></div>
+                </div>
+
+                <div class="row">
+                    <div class="col col-xs-3">
+                        <div class="clear button" id="clear-all"><div class="text clear-button">AC</div></div></div>           
+                    <div class="col col-xs-3">
+                        <div class="button number"><div class="text button-text">0</div></div></div>
+                    <div class="col col-xs-3">
+                        <div class="button number"><div class="text button-text">.</div></div></div>
+                    <div class="col col-xs-3">
+                        <div class="button operator calc"><div class="text button-operator">+</div></div></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col col-sm-12">
+                        <div class="long operator" id="enter"><div class="text enter">=</div></div></div>
+                </div> 
+                
+                <div class="row credit">
+                    <div class="col-sm-12">
+                        <p>Design and code: <a href="http://www.melissamanousos.com" target="_blank">M. Manousos</a><br>
+                        A <a href="http://www.freecodecamp.org" target="_blank">freeCodeCamp</a> assignment.</p>
+                    </div>
+                </div>
+            </div>    
+                
         </div>
-        
-        
-        
-        
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         
@@ -78,7 +90,6 @@
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </body>
     

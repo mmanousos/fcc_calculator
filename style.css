@@ -1,7 +1,16 @@
+
 html {
     background-color: #FFECE5;
-    font-family: 'Space Mono', 'Roboto Mono', 'Electrolize', monospace, sans-serif;
+}
+
+body {
+    font-family: 'Roboto Mono', 'Electrolize', monospace, sans-serif !important; 
     font-size: 25px;
+}
+
+
+.row {
+    margin-bottom: 10px;
 }
 
 a:hover,
@@ -14,17 +23,21 @@ body {
     margin-top: 20px;
 }
 
-
 .calculator {
     background-color: #66FAFF; 
-    height: 800px;
+    height: 600px;
+    min-width: 425px;
+    max-width: 500px;
     padding-top: 20px;
 }
+
+
 
 .display {
     background-color: #FFECE5;
     border-radius: 10px;
     text-align: right;
+    margin: 0 20px; 
 }
 
 #display-main {
@@ -43,10 +56,9 @@ body {
 
 .button {
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    width: 75px;
+    height: 75px;
     padding: 10px;
-    vertical-align: middle;
 }
 
 .long {
@@ -55,25 +67,25 @@ body {
 }
 
 .text {
-    line-height: 70px;
+    line-height: 50px;
 }
 
 .button-text {   
-    padding-left: 25px;
-}
-
-.clear-button { 
     padding-left: 20px;
 }
 
+.clear-button { 
+    padding-left: 10px;
+}
+
 .button-operator {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .enter {   
-    padding-left: 200px;
+    padding-left: 225px;
+    padding-top: 20px;
 }
-
 
 .number {
     background-color: #7B8899;
@@ -90,6 +102,7 @@ body {
 .credit {
     margin-top: 15px;
     font-size: 80%;
+    background-color: #FFECE5;
     text-align: center;
 }
 

@@ -17,7 +17,7 @@ $(document).ready(function() {
         finalValue = 0;
         underValue = '';
         $('#display-under').html("");
-        $('#display-main').html("");
+        $('#display-main').html("0");
     });
     
     // buttons clicked on to calculate
