@@ -24,9 +24,6 @@ $(document).ready(function() {
     $('.number, .operator, #enter').on('click', function() { 
         var buttonValue = $(this).find('.text').html();
         var btnValStr = buttonValue.toString();
-        // until '.operator' button is clicked, holdValue needs to concatenate
-        // on each click, runningValue needs to collect integers or operators, clear holdValue;
-        console.log(buttonValue);
         
         // if 'enter' button is pressed
         if ($(this).is('#enter')) {
@@ -64,9 +61,7 @@ $(document).ready(function() {
             
             holdOperator = buttonValue;
             runningValue += buttonValue; 
-            console.log('current running value is ' + runningValue);
             holdValue = ''; 
         }
-    });    
-    
+    });      
 });
