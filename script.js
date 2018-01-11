@@ -20,14 +20,6 @@ $(document).ready(function() {
         $('#display-main').html("");
     });
     
-    // 'clear-entry' button functionality
-    $('#clear-entry').on('click', function() {
-        holdValue = '';
-        //runningValue = 0;
-        holdOperator = '';
-        //$('#display-under').html("");
-    });
-    
     // buttons clicked on to calculate
     $('.number, .operator, #enter').on('click', function() { 
         var buttonValue = $(this).find('.text').html();
@@ -38,14 +30,14 @@ $(document).ready(function() {
         
         // if 'enter' button is pressed
         if ($(this).is('#enter')) {
-            // display equal sign with spaces on either side
-            underValue = underValue + " " +  btnValStr + " ";
-            $('#display-under').html('' + underValue + ''); 
-            
             finalValue = eval(runningValue);
             
             // display total calculated value in main display field
             $('#display-main').html('' + finalValue + '');
+            
+            // display equal sign with spaces on either side
+            underValue = underValue + " " +  btnValStr + " " + finalValue + " " ;
+            $('#display-under').html('' + underValue + ''); 
             
         // if number button is pressed    
         } else if ($(this).is('.number')) {
@@ -55,7 +47,6 @@ $(document).ready(function() {
             
             // add digits from button to holdValue with digits together   
             holdValue = holdValue + buttonValue;   
-            console.log('current hold value is ' + holdValue);
             
             // add button value to runningValue
             if (runningValue === 0) {
@@ -63,7 +54,6 @@ $(document).ready(function() {
             } else {
                 runningValue = runningValue + buttonValue;
             }
-            console.log('current running value is ' + runningValue);
             
             
         // if operator button is pressed    
